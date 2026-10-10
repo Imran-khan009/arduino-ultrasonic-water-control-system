@@ -1,5 +1,3 @@
-# arduino-ultrasonic-water-control-system
-Arduino-based distance monitoring and output control system using an ultrasonic sensor and a digital output.
 # Smart Irrigation / Ultrasonic Water Control System
 
 An Arduino-based project demonstrating ultrasonic distance measurement and digital output control.
@@ -52,53 +50,9 @@ At exactly 20 cm, neither condition changes the output, so the previous output s
 7. Test the distance readings and output behavior.
 
 ## Project Status
-
-[Smart Irrigation system Code.txt](https://github.com/user-attachments/files/33292277/Smart.Irrigation.system.Code.txt)//EAZYTRONIC.COM
-  
-const int trigPin = 10;
-const int echoPin = 11;
-long duration;
-int distanceCm, distanceInch;
-void setup()
-{
-
-Serial.begin(9600); 
-pinMode(trigPin, OUTPUT);
-pinMode(echoPin, INPUT);
-pinMode(7,OUTPUT);
-digitalWrite(7,HIGH);
-}
-void loop() 
-{
-digitalWrite(trigPin, LOW);
-delayMicroseconds(2);
-digitalWrite(trigPin, HIGH);
-delayMicroseconds(10);
-digitalWrite(trigPin, LOW);
-duration = pulseIn(echoPin, HIGH);
-distanceCm= duration*0.034/2;
-distanceInch = duration*0.0133/2;
-Serial.println("Distance: ");
-Serial.println(distanceCm);
-delay(500);
-
-if(distanceCm <20)
-{
-  digitalWrite(7,LOW);
- 
-}
-
-if(distanceCm >20)
-{
-  digitalWrite(7,HIGH);
- 
-}
-
-}
-<img width="1105" height="622" alt="Smart Irrigation system" src="https://github.com/user-attachments/assets/df544efb-b51d-4694-b6f0-ab819cffff8a" />
-
-* Circuit diagram: Add the actual diagram
-* Hardware testing: Record verified results
+* Source Code:[Smart Irrigation system Code.txt](https://github.com/user-attachments/files/33292277/Smart.Irrigation.system.Code.txt)//EAZYTRONIC.COM
+* Circuit diagram:<img width="1105" height="622" alt="Smart Irrigation system" src="https://github.com/user-attachments/assets/df544efb-b51d-4694-b6f0-ab819cffff8a" />
+* Hardware testing Student Video: 
 * Water pump or irrigation operation: Confirm according to the actual hardware
 
 ## Safety Note
