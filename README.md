@@ -51,7 +51,8 @@ At exactly 20 cm, neither condition changes the output, so the previous output s
 
 ## Project Status
 * Source Code:[Smart Irrigation system Code.txt](https://github.com/user-attachments/files/33292277/Smart.Irrigation.system.Code.txt)//EAZYTRONIC.COM
-* Circuit diagram:<img width="1105" height="622" alt="Smart Irrigation system" src="https://github.com/user-attachments/assets/df544efb-b51d-4694-b6f0-ab819cffff8a" />
+* Circuit diagram: <img width="2728" height="1536" alt="Smart Irrigation system Diagram" src="https://github.com/user-attachments/assets/6aa2f6b2-7885-4ec4-8bbf-81812531fa20" />
+
 * Hardware testing Student Video: https://github.com/user-attachments/assets/b89dd4a4-60bc-4944-b187-8ac09ce69bff
 
 
